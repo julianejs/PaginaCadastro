@@ -1,0 +1,124 @@
+
+*{
+    margin: 0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+body {
+
+    background: black;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    min-width: 100vh;
+}
+
+main {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    color:rgb(214, 211, 211);
+    font-size: 5rem;
+    margin-bottom: 4rem;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+main .social-media {
+    display: flex;
+    align-content: center;
+}
+
+main .social-media img {
+    width: 36px;
+    margin-left: 1rem;
+    justify-content: center;
+}
+
+main .social-media a:first-child img {
+    margin-lef: 0;
+
+}
+
+main .alternative {
+    margin-top: 1.5rem;
+}
+
+main .alternative span{
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.3);
+    position: relative;
+}
+
+main .alternative span::before, main .alternative span::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100px;
+    bottom: 50%;
+    right: 50px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+main .alternative span::after {
+    left: 50px;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+main form input {
+    background: #161923;
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline: none;
+    color: rgba(166, 166, 166);
+    font-size: 1rem;
+    border: 1px solid #040b18;
+    border-radius: 8px;
+}
+
+main form input[ type="submit" ] {
+    cursor: pointer;
+    width: 50%;
+    margin-top: 4rem;
+    border: none;
+    border-radius: 32px;
+    background: rgb(110, 107, 106);
+    color: white;
+    font-size: large;
+    transition: all .3s ease-in-out;
+}
+
+main form input[ type="submit" ]:hover {
+    background: rgb(192, 190, 190);
+}
+
+main span {
+    color:rgb(214, 211, 211) ;
+    font-size: 16px;
+}
